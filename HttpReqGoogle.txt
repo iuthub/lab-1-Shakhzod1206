@@ -1,0 +1,40 @@
+15:59:30.174000 == Info:   Trying 52.22.145.207...
+15:59:30.174000 == Info: TCP_NODELAY set
+15:59:30.190000 == Info: Connected to httpbin.org (52.22.145.207) port 80 (#0)
+15:59:30.190000 => Send header, 111 bytes (0x6f)
+0000: GET /get HTTP/1.1
+0013: Host: httpbin.org
+0026: User-Agent: curl/7.63.0
+003f: Accept: */*
+004c: Referer: http://www.google.com/
+006d: 
+15:59:30.642000 <= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+15:59:30.642000 <= Recv header, 25 bytes (0x19)
+0000: Server: gunicorn/19.9.0
+15:59:30.642000 <= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 31 Jan 2019 11:00:52 GMT
+15:59:30.642000 <= Recv header, 32 bytes (0x20)
+0000: Content-Type: application/json
+15:59:30.642000 <= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+15:59:30.642000 <= Recv header, 40 bytes (0x28)
+0000: Access-Control-Allow-Credentials: true
+15:59:30.642000 <= Recv header, 16 bytes (0x10)
+0000: Via: 1.1 vegur
+15:59:30.642000 <= Recv header, 21 bytes (0x15)
+0000: Content-Length: 353
+15:59:30.642000 <= Recv header, 24 bytes (0x18)
+0000: Connection: Keep-Alive
+15:59:30.642000 <= Recv header, 8 bytes (0x8)
+0000: Age: 0
+15:59:30.642000 <= Recv header, 2 bytes (0x2)
+0000: 
+15:59:30.642000 <= Recv data, 353 bytes (0x161)
+0000: {.  "args": {}, .  "headers": {.    "Accept": "*/*", .    "Cache
+0040: -Control": "max-stale=0", .    "Connection": "close", .    "Host
+0080: ": "httpbin.org", .    "If-Modified-Since": "Thu, 31 Jan 2019 10
+00c0: :57:43 GMT", .    "Referer": "http://www.google.com/", .    "Use
+0100: r-Agent": "curl/7.63.0".  }, .  "origin": "87.237.236.162", .  "
+0140: url": "http://httpbin.org/get".}.
+15:59:30.642000 == Info: Connection #0 to host httpbin.org left intact
